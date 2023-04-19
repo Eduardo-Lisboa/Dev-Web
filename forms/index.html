@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & JS</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Formulário e JavaScript</h1>
+        </div>
+        <div>
+            <h2>Capturando valores de Radio</h2>
+            <p>Selecione seu genero</p>
+
+            <p>
+                Genero:
+                <input type="radio" name="gender" value="Masculino">Masculino
+                <input type="radio" name="gender" value="Feminino">Feminino
+                <input type="radio" name="gender" value="Outro">Outro
+            </p>
+            <button id="submit-radio">Enviar</button>
+            
+            <div id="result-radio"></div>
+            
+             
+        </div>
+
+        <div>
+            <h2>Qual elemento da Select foi Selecionado</h2>
+            <p>Selecione Seu Plano</p>
+            <select id="select">
+                <option value="Free">Free</option>
+                <option value="Basic">Basic</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <p>
+                O plano Selecionado é: <span class="result-select"></span>
+            </p>
+
+            <button id="submit-select">Veja o Plano Selecionado</button>
+        </div>
+        <div>
+            <h2>Elementos CheckBox</h2>
+            <p>Quais são suas prooridades</p>
+            <p>Trablaho <input type="checkbox" value="Trablaho"></p>
+            <p>Saude <input type="checkbox" value="Saude"></p>
+            <p>Estudos <input type="checkbox" value="Estudos"></p>
+
+            <button id="submit-checkbox">Enviar</button>
+
+            <p>Minhas Prioridades são: <span id="result-checkbox"></span></p>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

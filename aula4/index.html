@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <div>
+        <h1>Introdução ao JS</h1>
+        <div>
+            <h2>Ver Data e Hora</h2>
+            <p>Clique para ver data e Hora do Sistema</p>
+            <button onclick="document.getElementById('dh').innerHTML= Date()">Veja Data & Hora</button>
+            <p id="dh"></p>
+        </div>
+    </div>
+    
+    <div>
+        <h2>Tanferir informação com JS</h2>
+        <p id="parCopia">Este paragrafo sera clpiado para o paragrafo abaixo do botão</p>
+        <button onclick="copiaParagrafo()">Clique Aqui para copiar!</button>
+        <p id="par2" "></p>
+    </div>
+
+    <div>
+        <h2>Editando a src de uma imagem</h2>
+        <p>JS pode editar a fonte de uma imagem</p>
+
+        <button onclick="acenderLampada()">Acender</button>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="lampada" alt="Uma lampada Apagada">
+        <button onclick="desligarLampada()">Apagar</button>
+    </div>
+    <div>
+        <h2>Alterando Estilo com Js</h2>
+        <p id="pEdit">Esse paragrafo sera alterado quando o botao abaixo receber um click</p>
+        <button onclick="editStyle()" onmouseover="fontAlt()">Clique para alterar o Estilo</button>
+    </div>
+    <div>
+        <h2>Janela de Alerta</h2>
+        <p>Clique no botão para ver uma mensagem</p>
+        <button onclick="verJanela()">Veja a mensagem</button>
+    </div>
+
+    <script src="js/main.js" ></script> 
+    
+</body>
+</html>
